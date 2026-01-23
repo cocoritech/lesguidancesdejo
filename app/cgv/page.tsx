@@ -6,34 +6,36 @@ export const metadata = {
 
 export default function CGV() {
   return (
-    <main className="min-h-screen bg-dark">
+    <main className="min-h-screen cosmic-bg relative">
       {/* Navigation */}
-      <nav className="bg-dark/80 backdrop-blur-md border-b border-violet/20">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <nav className="glass border-b border-cream/5">
+        <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
           <Link
             href="/"
-            className="font-[family-name:var(--font-cormorant)] text-2xl font-semibold text-gold"
+            className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-gold"
           >
             Les Guidances de Jo
           </Link>
           <Link
             href="/"
-            className="font-[family-name:var(--font-raleway)] text-sm text-cream/70 hover:text-gold transition-colors"
+            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/50 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
           >
-            Retour à l&apos;accueil
+            Retour
           </Link>
         </div>
       </nav>
 
-      {/* Content */}
-      <div className="max-w-3xl mx-auto px-6 py-16">
-        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-12">
+      <div className="max-w-3xl mx-auto px-6 py-20">
+        <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
+          Informations légales
+        </p>
+        <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-16">
           Conditions Générales de Vente
         </h1>
 
-        <div className="space-y-8 font-[family-name:var(--font-raleway)] text-cream/70 text-sm leading-relaxed">
+        <div className="space-y-10 font-[family-name:var(--font-raleway)] text-cream/60 text-sm leading-[1.9]">
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 1 — Objet
             </h2>
             <p>
@@ -46,7 +48,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 2 — Prestations
             </h2>
             <p>
@@ -59,7 +61,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 3 — Prise de rendez-vous
             </h2>
             <p>
@@ -71,7 +73,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 4 — Tarifs
             </h2>
             <p>
@@ -84,27 +86,27 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 5 — Annulation et report
             </h2>
-            <ul className="list-disc list-inside space-y-2">
-              <li>
-                Toute annulation doit intervenir au minimum 24 heures avant le
-                rendez-vous prévu.
+            <ul className="list-none space-y-2">
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                Toute annulation doit intervenir au minimum 24 heures avant le rendez-vous prévu.
               </li>
-              <li>
-                En cas d&apos;annulation tardive (moins de 24h) ou d&apos;absence
-                sans prévenir, la consultation est considérée comme due.
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                En cas d&apos;annulation tardive (moins de 24h) ou d&apos;absence sans prévenir, la consultation est considérée comme due.
               </li>
-              <li>
-                Un report est possible sous réserve de disponibilité et dans
-                le respect du délai de 24 heures.
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                Un report est possible sous réserve de disponibilité et dans le respect du délai de 24 heures.
               </li>
             </ul>
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 6 — Responsabilité
             </h2>
             <p>
@@ -118,7 +120,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 7 — Confidentialité
             </h2>
             <p>
@@ -130,7 +132,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 8 — Droit de rétractation
             </h2>
             <p>
@@ -143,7 +145,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 9 — Données personnelles
             </h2>
             <p>
@@ -156,7 +158,7 @@ export default function CGV() {
           </section>
 
           <section>
-            <h2 className="text-gold text-lg font-medium mb-3">
+            <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 10 — Droit applicable
             </h2>
             <p>
@@ -166,20 +168,21 @@ export default function CGV() {
             </p>
           </section>
 
-          <div className="pt-8 border-t border-violet/10">
-            <p className="text-cream/40 text-xs">
+          <div className="pt-10">
+            <div className="h-px bg-gradient-to-r from-transparent via-cream/10 to-transparent mb-6" />
+            <p className="text-cream/20 text-[10px] tracking-wider">
               Dernière mise à jour : Janvier 2025
             </p>
           </div>
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="border-t border-violet/10 py-8 px-6">
+      <footer className="py-8 px-6">
+        <div className="h-px bg-gradient-to-r from-transparent via-cream/5 to-transparent mb-8" />
         <div className="max-w-5xl mx-auto text-center">
           <Link
             href="/"
-            className="font-[family-name:var(--font-raleway)] text-sm text-cream/50 hover:text-gold transition-colors"
+            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/30 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
           >
             &larr; Retour à l&apos;accueil
           </Link>
