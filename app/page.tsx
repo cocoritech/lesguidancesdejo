@@ -221,11 +221,6 @@ export default function Home() {
                     de la clarté, avec <span className="text-beige">pragmatisme
                     et bienveillance</span>.
                   </p>
-                  <p className="scroll-reveal">
-                    <span className="text-violet-light italic font-[family-name:var(--font-cormorant)] text-lg">
-                      Un espace sécurisé, sans jugement, pour avancer à ton rythme.
-                    </span>
-                  </p>
                 </div>
               </div>
             </div>
