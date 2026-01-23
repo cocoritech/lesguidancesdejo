@@ -299,6 +299,78 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ====== DEROULEMENT ====== */}
+        <section className="py-32 px-6 relative">
+          <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
+          <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gold/5 rounded-full blur-[100px]" />
+
+          <div className="relative max-w-3xl mx-auto">
+            <div className="text-center mb-16 scroll-reveal">
+              <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
+                En pratique
+              </p>
+              <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream">
+                Comment se déroule une guidance ?
+              </h2>
+            </div>
+
+            <div className="glass rounded-3xl p-10 md:p-14 scroll-reveal">
+              <div className="space-y-8 font-[family-name:var(--font-raleway)] text-cream/60 text-sm leading-[1.9]">
+                <p>
+                  La guidance personnelle se fait via <span className="text-cream/80">messages vocaux WhatsApp</span> uniquement.
+                </p>
+
+                <div className="pl-5 border-l border-gold/20">
+                  <p>
+                    L&apos;avantage de ce fonctionnement, c&apos;est que vous n&apos;avez pas besoin d&apos;être disponible au moment du rendez-vous.
+                    Je me charge de vous envoyer chaque tirage de cartes en photo, suivi de son interprétation par message vocal.
+                    Cela vous permet de <span className="text-beige">conserver votre guidance</span>, et de la réécouter autant de fois que vous le souhaitez.
+                  </p>
+                </div>
+
+                <div>
+                  <p className="text-gold/80 text-xs tracking-[0.15em] uppercase mb-3">Après votre réservation</p>
+                  <p>
+                    Un email de rappel vous sera envoyé 24h avant le rendez-vous. Il vous sera alors demandé de transmettre par WhatsApp :
+                  </p>
+                  <ul className="mt-3 space-y-2">
+                    <li className="flex gap-3">
+                      <span className="text-gold/40 mt-0.5">—</span>
+                      <span>Date de naissance</span>
+                    </li>
+                    <li className="flex gap-3">
+                      <span className="text-gold/40 mt-0.5">—</span>
+                      <span>Photo récente de la consultante (vous-même)</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="pl-5 border-l border-violet/20">
+                  <p className="italic text-cream/50">
+                    En prenant rendez-vous avec moi, vous acceptez de lâcher-prise et de faire confiance aux cartes.
+                    Ce sont elles qui vont se charger de mettre en lumière ce qui doit l&apos;être, et d&apos;aborder les thématiques essentielles.
+                  </p>
+                </div>
+
+                <p className="text-violet-light font-[family-name:var(--font-cormorant)] text-lg italic">
+                  Bienveillance, empathie et tolérance sont mes mots d&apos;ordre.
+                </p>
+
+                <div className="pt-4 border-t border-cream/5">
+                  <p className="text-cream/40 text-xs">
+                    En cas d&apos;annulation, merci de prévenir au minimum 48h à l&apos;avance.
+                    Aucun remboursement ne pourra être effectué au-delà de ce délai.
+                  </p>
+                </div>
+
+                <p className="text-right text-gold/60 font-[family-name:var(--font-cormorant)] text-base italic">
+                  Avec toute ma lumière, Johanna
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ====== CALENDLY ====== */}
         <section id="rdv" className="py-32 px-6 relative">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violet/20 to-transparent" />
