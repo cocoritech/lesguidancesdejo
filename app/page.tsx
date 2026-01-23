@@ -208,20 +208,22 @@ export default function Home() {
                 <div className="space-y-6 font-[family-name:var(--font-raleway)] text-cream/60 text-sm leading-[1.8]">
                   <p className="scroll-reveal">
                     Je suis <span className="text-gold">Johanna</span>,
-                    cartomancienne et guide de transition. J&apos;accompagne les
-                    femmes qui traversent des moments charnières — celles qui
-                    sentent qu&apos;il est temps de reprendre les rênes.
+                    cartomancienne et guide de transition.
+                    <br />
+                    J&apos;accompagne les femmes dans ces moments où tout bouge,
+                    où l&apos;on sent qu&apos;un choix, un cap, s&apos;impose.
                   </p>
                   <p className="scroll-reveal">
-                    Les cartes sont un outil, un miroir qui révèle ce que tu
-                    sais déjà au fond de toi. Mon rôle : t&apos;aider à y voir
-                    clair, avec <span className="text-beige">pragmatisme et
-                    bienveillance</span>, les pieds ancrés dans la réalité.
+                    Les cartes sont un support, un miroir. Elles éclairent ce
+                    qui est déjà là.
+                    <br />
+                    Mon rôle est de t&apos;aider à mettre des mots, à retrouver
+                    de la clarté, avec <span className="text-beige">pragmatisme
+                    et bienveillance</span>.
                   </p>
                   <p className="scroll-reveal">
                     <span className="text-violet-light italic font-[family-name:var(--font-cormorant)] text-lg">
-                      Un cadre bienveillant, du concret, et un espace sûr pour
-                      avancer sereinement.
+                      Un espace sécurisé, sans jugement, pour avancer à ton rythme.
                     </span>
                   </p>
                 </div>
