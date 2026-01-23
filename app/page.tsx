@@ -200,7 +200,7 @@ export default function Home() {
                     Qui suis-je
                   </p>
                   <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-10 leading-tight">
-                    Mettre en lumière. Trancher.<br />
+                    Mettre en lumière. Comprendre.<br />
                     <span className="text-violet-light">Avancer.</span>
                   </h2>
                 </div>
