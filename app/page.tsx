@@ -136,8 +136,8 @@ export default function Home() {
             </h1>
 
             <p className="animate-reveal delay-400 font-[family-name:var(--font-raleway)] text-base md:text-lg text-cream/50 font-light max-w-lg mx-auto mb-12 leading-relaxed">
-              Reprends les rênes de ta vie.<br className="hidden md:block" />
-              Avec clarté, pragmatisme et une touche de magie.
+              Retrouver de la clarté quand tout s&apos;emmêle.<br className="hidden md:block" />
+              Guidance intuitive, concrète et éclairante.
             </p>
 
             <div className="animate-reveal delay-600">
