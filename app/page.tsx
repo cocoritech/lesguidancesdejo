@@ -138,8 +138,8 @@ export default function Home() {
                   les pieds bien ancrés dans la réalité.
                 </p>
                 <p className="text-gold/80 italic font-[family-name:var(--font-cormorant)] text-lg">
-                  Pas de promesses en l&apos;air. Du concret, de la clarté, et un
-                  espace sûr pour avancer.
+                  Un cadre bienveillant, du concret, et un espace sûr pour
+                  avancer sereinement.
                 </p>
               </div>
             </div>
