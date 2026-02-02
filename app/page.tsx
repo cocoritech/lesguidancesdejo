@@ -349,15 +349,6 @@ export default function Home() {
                   style={{ transitionDelay: `${index * 0.1}s` }}
                 >
                   <div className={`glass rounded-3xl p-8 h-full hover:border-${guidance.color}/30 transition-all duration-700 relative overflow-hidden flex flex-col`}>
-                    {/* Popular badge */}
-                    {guidance.popular && (
-                      <div className="absolute top-4 right-4">
-                        <span className="bg-gold/20 text-gold text-[9px] font-[family-name:var(--font-raleway)] uppercase tracking-wider px-3 py-1 rounded-full border border-gold/30">
-                          Complet
-                        </span>
-                      </div>
-                    )}
-
                     {/* Hover glow */}
                     <div className={`absolute -top-20 -right-20 w-40 h-40 bg-${guidance.color}/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`} />
 
