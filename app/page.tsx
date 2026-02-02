@@ -85,7 +85,6 @@ export default function Home() {
     {
       number: "01",
       title: "Tu réserves ta guidance",
-      icon: "📅",
       details: [
         "Sur Calendly (bouton ci-dessous)",
         "Tu choisis : Lumière, Passage ou Métamorphose",
@@ -96,7 +95,6 @@ export default function Home() {
     {
       number: "02",
       title: "Tu m'envoies ta photo",
-      icon: "📸",
       details: [
         "24h avant ton RDV",
         "Une photo récente de toi",
@@ -107,7 +105,6 @@ export default function Home() {
     {
       number: "03",
       title: "Je canalise pour toi",
-      icon: "🔮",
       details: [
         "Je me connecte à ton énergie",
         "Les cartes me parlent",
@@ -118,7 +115,6 @@ export default function Home() {
     {
       number: "04",
       title: "Tu reçois ta guidance",
-      icon: "📱",
       details: [
         "Par WhatsApp uniquement",
         "Photo de chaque tirage",
@@ -222,12 +218,6 @@ export default function Home() {
 
           {/* Hero content */}
           <div className="relative z-10 text-center px-6 max-w-4xl">
-            <div className="animate-reveal">
-              <p className="font-[family-name:var(--font-raleway)] text-violet-light/80 text-[10px] md:text-xs tracking-[0.4em] uppercase mb-8">
-                Cartomancienne intuitive
-              </p>
-            </div>
-
             <h1 className="animate-reveal delay-200 font-[family-name:var(--font-cormorant)] text-5xl md:text-7xl lg:text-[6rem] font-light text-cream leading-[0.9] mb-8">
               Les Guidances
               <br />
@@ -236,12 +226,8 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="animate-reveal delay-400 font-[family-name:var(--font-raleway)] text-base md:text-lg text-cream/50 font-light max-w-lg mx-auto mb-6 leading-relaxed">
+            <p className="animate-reveal delay-400 font-[family-name:var(--font-raleway)] text-base md:text-lg text-cream/50 font-light max-w-lg mx-auto mb-12 leading-relaxed">
               Choisis celle qui résonne avec toi.
-            </p>
-
-            <p className="animate-reveal delay-500 font-[family-name:var(--font-raleway)] text-sm text-cream/40 font-light max-w-md mx-auto mb-12 leading-relaxed">
-              Ta photo suffit. Lien en bio pour réserver.
             </p>
 
             <div className="animate-reveal delay-600">
@@ -284,7 +270,7 @@ export default function Home() {
                     </p>
                     <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent my-3" />
                     <p className="font-[family-name:var(--font-raleway)] text-violet-light/70 text-[10px] tracking-[0.3em] uppercase">
-                      Cartomancienne intuitive
+                      Tarot & Oracles
                     </p>
                   </div>
 
@@ -304,21 +290,20 @@ export default function Home() {
                     Qui suis-je
                   </p>
                   <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-10 leading-tight">
-                    Je canalise pour toi.<br />
-                    <span className="text-violet-light">Les cartes me parlent.</span>
+                    Moi c&apos;est Johanna,<br />
+                    <span className="text-violet-light">et je tire les cartes pour toi.</span>
                   </h2>
                 </div>
 
                 <div className="space-y-6 font-[family-name:var(--font-raleway)] text-cream/60 text-sm leading-[1.8]">
                   <p className="scroll-reveal">
-                    Je suis <span className="text-gold">Johanna</span>, cartomancienne intuitive.
-                    <br />
-                    Je me connecte à ton énergie. Je reçois les messages dont ton âme a besoin.
+                    Je me connecte à ton énergie, les cartes me parlent, et je te transmets les messages dont tu as besoin — qu&apos;ils concernent ton passé, ton présent ou ton avenir.
                   </p>
                   <p className="scroll-reveal">
-                    Passé, présent ou avenir... <span className="text-beige">Les cartes décident.</span>
-                    <br />
-                    Aucune question à poser de ton côté. Fais confiance.
+                    Tu n&apos;as rien à préparer, aucune question à poser. <span className="text-beige">Juste à faire confiance.</span>
+                  </p>
+                  <p className="scroll-reveal">
+                    Tu reçois tout par WhatsApp : les photos de chaque tirage + mon interprétation en vocal, à réécouter autant de fois que tu veux.
                   </p>
                 </div>
               </div>
@@ -429,14 +414,11 @@ export default function Home() {
           <div className="relative max-w-4xl mx-auto">
             <div className="text-center mb-16 scroll-reveal">
               <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
-                En pratique
+                Le processus
               </p>
               <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream">
-                Comment ça marche ?
+                Comment ça marche
               </h2>
-              <p className="font-[family-name:var(--font-raleway)] text-cream/40 text-sm mt-4">
-                Je t&apos;explique tout
-              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -453,16 +435,10 @@ export default function Home() {
                     </div>
 
                     <div className="relative">
-                      {/* Icon */}
-                      <span className="text-3xl mb-4 block">{step.icon}</span>
-
                       {/* Title */}
-                      <h3 className="font-[family-name:var(--font-cormorant)] text-xl text-cream mb-4">
-                        Étape {step.number.replace("0", "")}
-                      </h3>
-                      <p className="font-[family-name:var(--font-raleway)] text-gold/80 text-sm mb-4">
+                      <h3 className="font-[family-name:var(--font-cormorant)] text-2xl text-cream mb-2">
                         {step.title}
-                      </p>
+                      </h3>
 
                       {/* Details */}
                       <ul className="space-y-2 mb-4">
@@ -518,7 +494,7 @@ export default function Home() {
 
             <div className="text-center mt-8 scroll-reveal">
               <p className="font-[family-name:var(--font-raleway)] text-cream/30 text-xs">
-                Tu paies en ligne · Tu reçois un email de confirmation · Ta photo suffit
+                Paiement sécurisé · Confirmation par email · Livraison sous 24h
               </p>
             </div>
           </div>
@@ -529,8 +505,8 @@ export default function Home() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/10 to-transparent" />
 
           <div className="max-w-2xl mx-auto text-center scroll-reveal">
-            <p className="font-[family-name:var(--font-cormorant)] text-2xl text-cream/40 mb-8 italic">
-              Retrouve-moi au quotidien
+            <p className="font-[family-name:var(--font-raleway)] text-cream/40 text-sm mb-6">
+              Avis clients et actualités sur Instagram
             </p>
             <a
               href="https://www.instagram.com/lesguidancesdejo"
