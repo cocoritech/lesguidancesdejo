@@ -51,24 +51,56 @@ export default function CGV() {
             <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
               Article 2 — Prestations
             </h2>
+            <p className="mb-4">
+              La Praticienne propose des guidances de cartomancie intuitive.
+              Trois formules sont disponibles :
+            </p>
+            <ul className="list-none space-y-2 mb-4">
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                <span><strong className="text-cream/70">Guidance Lumière</strong> (45€) : 1 tirage oracles, 1 Arcane Majeur du Tarot, photos + interprétation vocale</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                <span><strong className="text-cream/70">Guidance Passage</strong> (75€) : 1 tirage oracles, 1 tirage Tarot, 1 tirage conseils, photos + interprétations vocales</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                <span><strong className="text-cream/70">Guidance Métamorphose</strong> (120€) : 1 tirage oracles, 1 tirage Météo Énergétique, 1 tirage Tarot, 1 tirage de clarification, 1 tirage conseils, photos + interprétations vocales</span>
+              </li>
+            </ul>
             <p>
-              La Praticienne propose des consultations de cartomancie et
-              d&apos;accompagnement en transition de vie. Ces prestations
-              s&apos;inscrivent dans une démarche de développement personnel et
-              ne se substituent en aucun cas à un avis médical, psychologique
-              ou juridique.
+              Ces prestations s&apos;inscrivent dans une démarche de
+              développement personnel et ne se substituent en aucun cas à un
+              avis médical, psychologique ou juridique.
             </p>
           </section>
 
           <section>
             <h2 className="text-gold/80 text-base font-medium mb-3 tracking-wide">
-              Article 3 — Prise de rendez-vous
+              Article 3 — Prise de rendez-vous et déroulement
             </h2>
-            <p>
+            <p className="mb-4">
               Les rendez-vous sont pris via la plateforme Calendly. La
               réservation d&apos;un créneau vaut acceptation des présentes CGV.
-              Toute consultation doit être réglée selon les modalités
-              indiquées lors de la prise de rendez-vous.
+              Toute consultation doit être réglée en ligne lors de la prise de rendez-vous.
+            </p>
+            <p className="mb-4">
+              Après réservation, le client doit transmettre par WhatsApp, 24h avant le rendez-vous :
+            </p>
+            <ul className="list-none space-y-2 mb-4">
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                Une photo récente de lui-même
+              </li>
+              <li className="flex gap-3">
+                <span className="text-gold/40 mt-1">—</span>
+                Sa date de naissance
+              </li>
+            </ul>
+            <p>
+              La guidance est délivrée exclusivement par messages WhatsApp (photos des tirages + interprétations vocales).
+              Le client n&apos;a aucune question à poser : les cartes révèlent ce qui doit être entendu.
             </p>
           </section>
 
@@ -92,15 +124,15 @@ export default function CGV() {
             <ul className="list-none space-y-2">
               <li className="flex gap-3">
                 <span className="text-gold/40 mt-1">—</span>
-                Toute annulation doit intervenir au minimum 24 heures avant le rendez-vous prévu.
+                Toute annulation doit intervenir au minimum 48 heures avant le rendez-vous prévu.
               </li>
               <li className="flex gap-3">
                 <span className="text-gold/40 mt-1">—</span>
-                En cas d&apos;annulation tardive (moins de 24h) ou d&apos;absence sans prévenir, la consultation est considérée comme due.
+                En cas d&apos;annulation tardive (moins de 48h) ou d&apos;absence sans prévenir, la consultation est considérée comme due et aucun remboursement ne pourra être effectué.
               </li>
               <li className="flex gap-3">
                 <span className="text-gold/40 mt-1">—</span>
-                Un report est possible sous réserve de disponibilité et dans le respect du délai de 24 heures.
+                Un report est possible sous réserve de disponibilité et dans le respect du délai de 48 heures.
               </li>
             </ul>
           </section>
@@ -171,7 +203,7 @@ export default function CGV() {
           <div className="pt-10">
             <div className="h-px bg-gradient-to-r from-transparent via-cream/10 to-transparent mb-6" />
             <p className="text-cream/20 text-[10px] tracking-wider">
-              Dernière mise à jour : Janvier 2025
+              Dernière mise à jour : Février 2026
             </p>
           </div>
         </div>
