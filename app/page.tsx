@@ -266,7 +266,7 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="animate-reveal delay-400 font-[family-name:var(--font-caveat)] text-2xl md:text-3xl text-gold/80 font-light max-w-lg mx-auto mb-12 leading-relaxed tracking-wide">
+            <p className="animate-reveal delay-400 font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-gold/80 font-light max-w-lg mx-auto mb-12 leading-relaxed tracking-wide italic">
               Johanna R&nbsp;&nbsp;|&nbsp;&nbsp;Guide de transition
             </p>
 
