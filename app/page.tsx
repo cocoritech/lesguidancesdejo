@@ -356,8 +356,8 @@ export default function Home() {
                     Qui suis-je
                   </p>
                   <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-8 leading-tight">
-                    Je suis Johanna,<br />
-                    <span className="text-violet-light">guide de transition.</span>
+                    Moi c&apos;est Johanna,<br />
+                    <span className="text-violet-light">et je tire les cartes pour toi.</span>
                   </h2>
                 </div>
 
