@@ -211,12 +211,18 @@ export default function CGV() {
 
       <footer className="py-8 px-6">
         <div className="h-px bg-gradient-to-r from-transparent via-cream/5 to-transparent mb-8" />
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <Link
             href="/"
             className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/30 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
           >
             &larr; Retour à l&apos;accueil
+          </Link>
+          <Link
+            href="/deontologie"
+            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/30 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
+          >
+            Charte de déontologie
           </Link>
         </div>
       </footer>

@@ -619,7 +619,16 @@ export default function Home() {
                 &copy; 2026 Johanna — Tous droits réservés
               </p>
             </div>
-            <div className="flex gap-8 font-[family-name:var(--font-raleway)] text-[10px] tracking-[0.15em] uppercase">
+            <div className="flex flex-wrap justify-center gap-6 font-[family-name:var(--font-raleway)] text-[10px] tracking-[0.15em] uppercase">
+              <a
+                href="mailto:contact@lesguidancesdejo.fr"
+                className="text-cream/30 hover:text-gold transition-colors duration-500 normal-case"
+              >
+                contact@lesguidancesdejo.fr
+              </a>
+              <Link href="/deontologie" className="text-cream/30 hover:text-gold transition-colors duration-500">
+                Déontologie
+              </Link>
               <Link href="/cgv" className="text-cream/30 hover:text-gold transition-colors duration-500">
                 CGV
               </Link>

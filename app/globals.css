@@ -16,7 +16,7 @@
 }
 
 body {
-  background: #0d0a07;
+  background: #291e15;
   color: var(--color-foreground);
   overflow-x: hidden;
 }
@@ -181,7 +181,7 @@ html {
               radial-gradient(ellipse at 80% 20%, rgba(239, 184, 92, 0.12) 0%, transparent 40%),
               radial-gradient(ellipse at 50% 80%, rgba(149, 99, 59, 0.15) 0%, transparent 50%),
               radial-gradient(ellipse at 70% 60%, rgba(172, 154, 205, 0.08) 0%, transparent 40%),
-              #0d0a07;
+              #291e15;
 }
 
 /* Glassmorphism */
