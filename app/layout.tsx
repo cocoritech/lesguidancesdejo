@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Caveat } from "next/font/google";
+import { Playfair_Display, Raleway } from "next/font/google";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -8,10 +8,10 @@ const playfair = Playfair_Display({
   weight: ["400", "500", "600", "700"],
 });
 
-const caveat = Caveat({
+const raleway = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${playfair.variable} ${caveat.variable} antialiased`}
+        className={`${playfair.variable} ${raleway.variable} antialiased`}
       >
         {children}
       </body>
