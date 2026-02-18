@@ -438,8 +438,8 @@ export default function Home() {
                         </p>
                         <ul className="space-y-2">
                           {guidance.includes.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/50 text-sm">
-                              <span className="text-gold/40 mt-0.5">✦</span>
+                            <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/80 text-sm">
+                              <span className="text-gold/60 mt-0.5">✦</span>
                               <span>{item}</span>
                             </li>
                           ))}
@@ -453,8 +453,8 @@ export default function Home() {
                         </p>
                         <ul className="space-y-2">
                           {guidance.forYouIf.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/40 text-xs">
-                              <span className="text-violet-light/40 mt-0.5">→</span>
+                            <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/70 text-xs">
+                              <span className="text-violet-light/70 mt-0.5">→</span>
                               <span>{item}</span>
                             </li>
                           ))}
