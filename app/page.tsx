@@ -357,14 +357,12 @@ export default function Home() {
                   </p>
                   <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-8 leading-tight">
                     Je suis Johanna,<br />
-                    <span className="text-violet-light">guide de transition.</span>
+                    <span className="text-violet-light">guide de transition</span><br />
+                    <span className="text-cream/70 text-3xl md:text-4xl">pour les femmes en métamorphose.</span>
                   </h2>
                 </div>
 
                 <div className="space-y-5 font-[family-name:var(--font-raleway)] text-cream/70 text-sm leading-[1.9]">
-                  <p className="scroll-reveal">
-                    Pour les <span className="text-beige">femmes en métamorphose</span>.
-                  </p>
                   <p className="scroll-reveal">
                     Je ne lis pas les cartes classiquement. Je canalise les messages dont ton âme a besoin — sans que tu aies à poser de questions.
                   </p>
