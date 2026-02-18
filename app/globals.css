@@ -177,9 +177,10 @@ html {
 
 /* Cosmic gradient background */
 .cosmic-bg {
-  background: radial-gradient(ellipse at 20% 50%, rgba(98, 66, 133, 0.15) 0%, transparent 50%),
-              radial-gradient(ellipse at 80% 20%, rgba(239, 184, 92, 0.08) 0%, transparent 40%),
-              radial-gradient(ellipse at 50% 80%, rgba(149, 99, 59, 0.1) 0%, transparent 50%),
+  background: radial-gradient(ellipse at 20% 50%, rgba(98, 66, 133, 0.22) 0%, transparent 50%),
+              radial-gradient(ellipse at 80% 20%, rgba(239, 184, 92, 0.12) 0%, transparent 40%),
+              radial-gradient(ellipse at 50% 80%, rgba(149, 99, 59, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at 70% 60%, rgba(172, 154, 205, 0.08) 0%, transparent 40%),
               #0d0a07;
 }
 

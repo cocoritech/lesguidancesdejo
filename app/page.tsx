@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -85,6 +86,8 @@ export default function Home() {
     {
       number: "01",
       title: "Tu réserves ta guidance",
+      color: "gold",
+      icon: "✦",
       details: [
         "Sur Calendly (bouton ci-dessous)",
         "Tu choisis : Lumière, Passage ou Métamorphose",
@@ -95,6 +98,8 @@ export default function Home() {
     {
       number: "02",
       title: "Tu m'envoies ta photo",
+      color: "violet-light",
+      icon: "✶",
       details: [
         "24h avant ton RDV",
         "Une photo récente de toi",
@@ -105,6 +110,8 @@ export default function Home() {
     {
       number: "03",
       title: "Je canalise pour toi",
+      color: "beige",
+      icon: "✩",
       details: [
         "Je me connecte à ton énergie",
         "Les cartes me parlent",
@@ -115,6 +122,8 @@ export default function Home() {
     {
       number: "04",
       title: "Tu reçois ta guidance",
+      color: "copper",
+      icon: "❋",
       details: [
         "Par WhatsApp uniquement",
         "Photo de chaque tirage",
@@ -123,6 +132,37 @@ export default function Home() {
       note: "À conserver et réécouter autant de fois que tu veux.",
     },
   ];
+
+  const stepColors: Record<string, { border: string; number: string; icon: string; glow: string; bullet: string }> = {
+    gold: {
+      border: "border-gold/40 hover:border-gold/70",
+      number: "text-gold",
+      icon: "text-gold bg-gold/10 border-gold/30",
+      glow: "bg-gold/15",
+      bullet: "text-gold",
+    },
+    "violet-light": {
+      border: "border-violet-light/40 hover:border-violet-light/70",
+      number: "text-violet-light",
+      icon: "text-violet-light bg-violet-light/10 border-violet-light/30",
+      glow: "bg-violet-light/15",
+      bullet: "text-violet-light",
+    },
+    beige: {
+      border: "border-beige/40 hover:border-beige/70",
+      number: "text-beige",
+      icon: "text-beige bg-beige/10 border-beige/30",
+      glow: "bg-beige/15",
+      bullet: "text-beige",
+    },
+    copper: {
+      border: "border-copper/40 hover:border-copper/70",
+      number: "text-copper",
+      icon: "text-copper bg-copper/10 border-copper/30",
+      glow: "bg-copper/15",
+      bullet: "text-copper",
+    },
+  };
 
   return (
     <div className="grain">
@@ -188,7 +228,7 @@ export default function Home() {
 
         {/* ====== HERO ====== */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-          {/* Star field - fixed positions to avoid hydration mismatch */}
+          {/* Star field */}
           <div className="star animate-shimmer" style={{ width: "2px", height: "2px", top: "15%", left: "10%", animationDelay: "0s", animationDuration: "3s", opacity: 0.5 }} />
           <div className="star animate-shimmer" style={{ width: "1px", height: "1px", top: "25%", left: "85%", animationDelay: "1s", animationDuration: "4s", opacity: 0.3 }} />
           <div className="star animate-shimmer" style={{ width: "2px", height: "2px", top: "40%", left: "20%", animationDelay: "2s", animationDuration: "3.5s", opacity: 0.6 }} />
@@ -226,8 +266,8 @@ export default function Home() {
               </span>
             </h1>
 
-            <p className="animate-reveal delay-400 font-[family-name:var(--font-raleway)] text-base md:text-lg text-cream/50 font-light max-w-lg mx-auto mb-12 leading-relaxed">
-              Choisis celle qui résonne avec toi.
+            <p className="animate-reveal delay-400 font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-gold/80 font-light max-w-lg mx-auto mb-12 leading-relaxed tracking-wide">
+              Johanna R&nbsp;&nbsp;|&nbsp;&nbsp;Guide de transition
             </p>
 
             <div className="animate-reveal delay-600">
@@ -251,27 +291,53 @@ export default function Home() {
         </section>
 
         {/* ====== ABOUT ====== */}
-        <section id="about" className="py-32 px-6 relative">
+        <section id="about" className="py-20 px-6 relative">
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-5 gap-16 items-center">
-              {/* Left: visual element */}
+            <div className="grid lg:grid-cols-5 gap-12 items-center">
+              {/* Left: photo */}
               <div className="lg:col-span-2 scroll-reveal">
                 <div className="relative aspect-square max-w-sm mx-auto">
                   {/* Glowing background */}
                   <div className="absolute inset-0 bg-gradient-to-br from-violet/20 to-gold/10 rounded-full blur-3xl" />
 
-                  {/* Card */}
-                  <div className="relative glass rounded-3xl aspect-square flex flex-col items-center justify-center p-10">
-                    <div className="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-6 animate-pulse-cosmic">
-                      <span className="text-2xl text-gold">&#10025;</span>
+                  {/* Card with photo */}
+                  <div className="relative glass rounded-3xl aspect-square flex flex-col items-center justify-center overflow-hidden">
+                    {/* Photo de Johanna — placer johanna.jpg dans /public/ */}
+                    <Image
+                      src="/johanna.jpg"
+                      alt="Johanna — Guide de transition"
+                      fill
+                      className="object-cover rounded-3xl"
+                      onError={(e) => {
+                        // Fallback si la photo n'est pas encore uploadée
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = "none";
+                        const parent = target.parentElement;
+                        if (parent) {
+                          const fallback = parent.querySelector(".photo-fallback") as HTMLElement;
+                          if (fallback) fallback.style.display = "flex";
+                        }
+                      }}
+                    />
+                    {/* Fallback affiché si pas de photo */}
+                    <div className="photo-fallback hidden flex-col items-center justify-center p-10 w-full h-full">
+                      <div className="w-16 h-16 rounded-full border border-gold/30 flex items-center justify-center mb-6 animate-pulse-cosmic">
+                        <span className="text-2xl text-gold">&#10025;</span>
+                      </div>
+                      <p className="font-[family-name:var(--font-cormorant)] text-3xl text-cream italic mb-2">
+                        Johanna
+                      </p>
+                      <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent my-3" />
+                      <p className="font-[family-name:var(--font-raleway)] text-violet-light/70 text-[10px] tracking-[0.3em] uppercase">
+                        Tarot & Oracles
+                      </p>
                     </div>
-                    <p className="font-[family-name:var(--font-cormorant)] text-3xl text-cream italic mb-2">
-                      Johanna
-                    </p>
-                    <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent my-3" />
-                    <p className="font-[family-name:var(--font-raleway)] text-violet-light/70 text-[10px] tracking-[0.3em] uppercase">
-                      Tarot & Oracles
-                    </p>
+                    {/* Overlay dégradé bas pour lisibilité */}
+                    <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0d0a07]/70 to-transparent rounded-b-3xl" />
+                    <div className="absolute bottom-5 left-0 right-0 text-center">
+                      <p className="font-[family-name:var(--font-cormorant)] text-xl text-cream italic">Johanna</p>
+                      <p className="font-[family-name:var(--font-raleway)] text-violet-light/80 text-[9px] tracking-[0.25em] uppercase mt-1">Guide de transition</p>
+                    </div>
                   </div>
 
                   {/* Decorative orbiting dot */}
@@ -289,21 +355,27 @@ export default function Home() {
                   <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
                     Qui suis-je
                   </p>
-                  <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-10 leading-tight">
-                    Moi c&apos;est Johanna,<br />
-                    <span className="text-violet-light">et je tire les cartes pour toi.</span>
+                  <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-8 leading-tight">
+                    Je suis Johanna,<br />
+                    <span className="text-violet-light">guide de transition.</span>
                   </h2>
                 </div>
 
-                <div className="space-y-6 font-[family-name:var(--font-raleway)] text-cream/60 text-sm leading-[1.8]">
+                <div className="space-y-5 font-[family-name:var(--font-raleway)] text-cream/70 text-sm leading-[1.9]">
                   <p className="scroll-reveal">
-                    Je me connecte à ton énergie, les cartes me parlent, et je te transmets les messages dont tu as besoin — qu&apos;ils concernent ton passé, ton présent ou ton avenir.
+                    Je suis Johanna, guide de transition pour les <span className="text-beige">femmes en métamorphose</span>.
                   </p>
                   <p className="scroll-reveal">
-                    Tu n&apos;as rien à préparer, aucune question à poser. <span className="text-beige">Juste à faire confiance.</span>
+                    Je ne lis pas les cartes classiquement. Je canalise les messages dont ton âme a besoin — sans que tu aies à poser de questions.
                   </p>
                   <p className="scroll-reveal">
-                    Tu reçois tout par WhatsApp : les photos de chaque tirage + mon interprétation en vocal, à réécouter autant de fois que tu veux.
+                    Ta photo suffit. Je me connecte à ton énergie, les cartes me parlent, et je te transmets ce que tu dois entendre. <span className="text-gold/80 italic">Passé, présent ou avenir, ce sont elles qui décident.</span>
+                  </p>
+                  <p className="scroll-reveal">
+                    Mon format est unique : tout se passe par <span className="text-beige">WhatsApp</span>. Tu reçois les photos de chaque tirage et mes interprétations en vocal. Tu peux conserver ta guidance et la réécouter autant de fois que nécessaire, à ton rythme.
+                  </p>
+                  <p className="scroll-reveal font-medium text-cream/80">
+                    Ce que je t&apos;apporte ? De la clarté quand tout est flou. Une validation de ce que tu ressens. Une guidance sans jugement pour traverser tes <span className="text-violet-light">ruptures, tes deuils, tes renaissances</span>.
                   </p>
                 </div>
               </div>
@@ -312,12 +384,12 @@ export default function Home() {
         </section>
 
         {/* ====== MES GUIDANCES ====== */}
-        <section id="guidances" className="py-32 px-6 relative">
+        <section id="guidances" className="py-20 px-6 relative">
           {/* Background orb */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-violet/5 rounded-full blur-[120px]" />
 
           <div className="relative max-w-6xl mx-auto">
-            <div className="text-center mb-16 scroll-reveal">
+            <div className="text-center mb-14 scroll-reveal">
               <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
                 Mes Guidances
               </p>
@@ -407,12 +479,12 @@ export default function Home() {
         </section>
 
         {/* ====== COMMENT CA MARCHE ====== */}
-        <section id="comment-ca-marche" className="py-32 px-6 relative">
+        <section id="comment-ca-marche" className="py-20 px-6 relative">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
           <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-gold/5 rounded-full blur-[100px]" />
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="text-center mb-16 scroll-reveal">
+            <div className="text-center mb-14 scroll-reveal">
               <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
                 Le processus
               </p>
@@ -422,54 +494,65 @@ export default function Home() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              {steps.map((step, index) => (
-                <div
-                  key={step.number}
-                  className="scroll-reveal"
-                  style={{ transitionDelay: `${index * 0.1}s` }}
-                >
-                  <div className="glass rounded-3xl p-8 h-full relative overflow-hidden group hover:border-gold/20 transition-all duration-700">
-                    {/* Step number */}
-                    <div className="absolute top-6 right-6 font-[family-name:var(--font-cormorant)] text-5xl text-cream/5 font-light">
-                      {step.number}
-                    </div>
+              {steps.map((step, index) => {
+                const c = stepColors[step.color];
+                return (
+                  <div
+                    key={step.number}
+                    className="scroll-reveal"
+                    style={{ transitionDelay: `${index * 0.1}s` }}
+                  >
+                    <div className={`glass rounded-3xl p-8 h-full relative overflow-hidden group transition-all duration-700 border ${c.border}`}>
+                      {/* Colored glow top-right */}
+                      <div className={`absolute -top-10 -right-10 w-32 h-32 ${c.glow} rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-700`} />
 
-                    <div className="relative">
-                      {/* Title */}
-                      <h3 className="font-[family-name:var(--font-cormorant)] text-2xl text-cream mb-2">
-                        {step.title}
-                      </h3>
+                      <div className="relative">
+                        {/* Step number — bien visible */}
+                        <div className="flex items-center gap-4 mb-6">
+                          <span className={`font-[family-name:var(--font-cormorant)] text-5xl font-bold ${c.number} leading-none`}>
+                            {step.number}
+                          </span>
+                          <div className={`w-10 h-10 rounded-full border flex items-center justify-center text-lg ${c.icon}`}>
+                            {step.icon}
+                          </div>
+                        </div>
 
-                      {/* Details */}
-                      <ul className="space-y-2 mb-4">
-                        {step.details.map((detail, i) => (
-                          <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/50 text-sm">
-                            <span className="text-gold/30 mt-0.5">•</span>
-                            <span>{detail}</span>
-                          </li>
-                        ))}
-                      </ul>
+                        {/* Title */}
+                        <h3 className="font-[family-name:var(--font-cormorant)] text-2xl text-cream mb-4">
+                          {step.title}
+                        </h3>
 
-                      {/* Note */}
-                      {step.note && (
-                        <p className="font-[family-name:var(--font-raleway)] text-violet-light/60 text-xs italic pt-3 border-t border-cream/5">
-                          {step.note}
-                        </p>
-                      )}
+                        {/* Details */}
+                        <ul className="space-y-2 mb-4">
+                          {step.details.map((detail, i) => (
+                            <li key={i} className="flex items-start gap-2 font-[family-name:var(--font-raleway)] text-cream/60 text-sm">
+                              <span className={`${c.bullet} mt-0.5`}>•</span>
+                              <span>{detail}</span>
+                            </li>
+                          ))}
+                        </ul>
+
+                        {/* Note */}
+                        {step.note && (
+                          <p className={`font-[family-name:var(--font-raleway)] text-xs italic pt-3 border-t border-cream/5 ${c.number} opacity-80`}>
+                            {step.note}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
 
         {/* ====== CALENDLY ====== */}
-        <section id="rdv" className="py-32 px-6 relative">
+        <section id="rdv" className="py-20 px-6 relative">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violet/20 to-transparent" />
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="text-center mb-14 scroll-reveal">
+            <div className="text-center mb-12 scroll-reveal">
               <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
                 Réserver
               </p>
@@ -501,7 +584,7 @@ export default function Home() {
         </section>
 
         {/* ====== INSTAGRAM CTA ====== */}
-        <section className="py-24 px-6 relative">
+        <section className="py-16 px-6 relative">
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/10 to-transparent" />
 
           <div className="max-w-2xl mx-auto text-center scroll-reveal">
