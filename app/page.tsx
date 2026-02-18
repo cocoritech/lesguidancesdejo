@@ -199,7 +199,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
             <Link
               href="/"
-              className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-gold"
+              className="font-[family-name:var(--font-caveat)] text-2xl font-semibold text-gold"
             >
               Les Guidances de Jo
             </Link>
@@ -227,7 +227,7 @@ export default function Home() {
         </nav>
 
         {/* ====== HERO ====== */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center">
           {/* Star field */}
           <div className="star animate-shimmer" style={{ width: "2px", height: "2px", top: "15%", left: "10%", animationDelay: "0s", animationDuration: "3s", opacity: 0.5 }} />
           <div className="star animate-shimmer" style={{ width: "1px", height: "1px", top: "25%", left: "85%", animationDelay: "1s", animationDuration: "4s", opacity: 0.3 }} />
@@ -261,12 +261,12 @@ export default function Home() {
             <h1 className="animate-reveal delay-200 font-[family-name:var(--font-cormorant)] text-5xl md:text-7xl lg:text-[6rem] font-light text-cream leading-[1] mb-8">
               Les Guidances
               <br />
-              <span className="gradient-text italic text-6xl md:text-8xl lg:text-[7rem] inline-block pb-3">
+              <span className="gradient-text italic text-6xl md:text-8xl lg:text-[7rem]">
                 de Jo
               </span>
             </h1>
 
-            <p className="animate-reveal delay-400 font-[family-name:var(--font-cormorant)] text-xl md:text-2xl text-gold/80 font-light max-w-lg mx-auto mb-12 leading-relaxed tracking-wide">
+            <p className="animate-reveal delay-400 font-[family-name:var(--font-caveat)] text-2xl md:text-3xl text-gold/80 font-light max-w-lg mx-auto mb-12 leading-relaxed tracking-wide">
               Johanna R&nbsp;&nbsp;|&nbsp;&nbsp;Guide de transition
             </p>
 
@@ -612,7 +612,7 @@ export default function Home() {
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cream/5 to-transparent" />
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="text-center md:text-left">
-              <p className="font-[family-name:var(--font-cormorant)] text-lg text-gold/70">
+              <p className="font-[family-name:var(--font-caveat)] text-xl text-gold/70">
                 Les Guidances de Jo
               </p>
               <p className="font-[family-name:var(--font-raleway)] text-cream/20 text-[10px] mt-1 tracking-wider">
