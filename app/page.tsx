@@ -258,10 +258,10 @@ export default function Home() {
 
           {/* Hero content */}
           <div className="relative z-10 text-center px-6 max-w-4xl">
-            <h1 className="animate-reveal delay-200 font-[family-name:var(--font-cormorant)] text-5xl md:text-7xl lg:text-[6rem] font-light text-cream leading-[0.9] mb-8">
+            <h1 className="animate-reveal delay-200 font-[family-name:var(--font-cormorant)] text-5xl md:text-7xl lg:text-[6rem] font-light text-cream leading-[1] mb-8">
               Les Guidances
               <br />
-              <span className="gradient-text italic text-6xl md:text-8xl lg:text-[7rem]">
+              <span className="gradient-text italic text-6xl md:text-8xl lg:text-[7rem] inline-block pb-3">
                 de Jo
               </span>
             </h1>
