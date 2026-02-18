@@ -356,14 +356,14 @@ export default function Home() {
                     Qui suis-je
                   </p>
                   <h2 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-8 leading-tight">
-                    Moi c&apos;est Johanna,<br />
-                    <span className="text-violet-light">et je tire les cartes pour toi.</span>
+                    Je suis Johanna,<br />
+                    <span className="text-violet-light">guide de transition.</span>
                   </h2>
                 </div>
 
                 <div className="space-y-5 font-[family-name:var(--font-raleway)] text-cream/70 text-sm leading-[1.9]">
                   <p className="scroll-reveal">
-                    Je suis Johanna, guide de transition pour les <span className="text-beige">femmes en métamorphose</span>.
+                    Pour les <span className="text-beige">femmes en métamorphose</span>.
                   </p>
                   <p className="scroll-reveal">
                     Je ne lis pas les cartes classiquement. Je canalise les messages dont ton âme a besoin — sans que tu aies à poser de questions.
