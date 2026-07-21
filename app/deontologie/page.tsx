@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Nav from "../components/Nav";
 
 export const metadata = {
   title: "Charte de déontologie | Les Guidances de Jo",
@@ -7,26 +8,10 @@ export const metadata = {
 export default function Deontologie() {
   return (
     <main className="min-h-screen cosmic-bg relative">
-      {/* Navigation */}
-      <nav className="glass border-b border-cream/5">
-        <div className="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-cormorant)] text-xl font-semibold text-gold"
-          >
-            Les Guidances de Jo
-          </Link>
-          <Link
-            href="/"
-            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/50 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
-          >
-            Retour
-          </Link>
-        </div>
-      </nav>
+      <Nav />
 
-      <div className="max-w-3xl mx-auto px-6 py-20">
-        <p className="font-[family-name:var(--font-raleway)] text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-4">
+      <div className="max-w-3xl mx-auto px-6 pt-32 pb-20">
+        <p className="font-[family-name:var(--font-raleway)] text-violet-light/70 text-[10px] tracking-[0.4em] uppercase mb-4">
           Éthique & engagement
         </p>
         <h1 className="font-[family-name:var(--font-cormorant)] text-4xl md:text-5xl font-light text-cream mb-4">
@@ -190,7 +175,7 @@ export default function Deontologie() {
         <div className="max-w-5xl mx-auto text-center">
           <Link
             href="/"
-            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/30 hover:text-gold transition-colors duration-500 uppercase tracking-[0.15em]"
+            className="font-[family-name:var(--font-raleway)] text-[10px] text-cream/30 hover:text-violet-light transition-colors duration-500 uppercase tracking-[0.15em]"
           >
             &larr; Retour à l&apos;accueil
           </Link>

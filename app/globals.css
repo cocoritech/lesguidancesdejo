@@ -177,10 +177,10 @@ html {
 
 /* Cosmic gradient background */
 .cosmic-bg {
-  background: radial-gradient(ellipse at 20% 50%, rgba(98, 66, 133, 0.22) 0%, transparent 50%),
-              radial-gradient(ellipse at 80% 20%, rgba(239, 184, 92, 0.12) 0%, transparent 40%),
-              radial-gradient(ellipse at 50% 80%, rgba(149, 99, 59, 0.15) 0%, transparent 50%),
-              radial-gradient(ellipse at 70% 60%, rgba(172, 154, 205, 0.08) 0%, transparent 40%),
+  background: radial-gradient(ellipse at 20% 50%, rgba(98, 66, 133, 0.32) 0%, transparent 55%),
+              radial-gradient(ellipse at 70% 60%, rgba(172, 154, 205, 0.16) 0%, transparent 45%),
+              radial-gradient(ellipse at 80% 20%, rgba(239, 184, 92, 0.08) 0%, transparent 40%),
+              radial-gradient(ellipse at 50% 80%, rgba(149, 99, 59, 0.12) 0%, transparent 50%),
               #291e15;
 }
 
@@ -193,7 +193,7 @@ html {
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-violet-light) 50%, var(--color-gold) 100%);
+  background: linear-gradient(135deg, var(--color-violet-light) 0%, var(--color-gold) 50%, var(--color-violet-light) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

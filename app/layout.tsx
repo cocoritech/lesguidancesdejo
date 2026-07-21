@@ -21,13 +21,13 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Les Guidances de Jo | Cartomancienne & Guide de transition",
+  title: "Les Guidances de Jo | Johanna Richard",
   description:
-    "Johanna, cartomancienne et guide de transition. Accompagne les femmes à reprendre les rênes de leur vie avec clarté et pragmatisme.",
+    "Johanna Richard, guide de transition pour les femmes en métamorphose. Une guidance canalisée, sans jugement, quoi que tu traverses.",
   openGraph: {
     title: "Les Guidances de Jo",
     description:
-      "Cartomancienne & Guide de transition - Accompagnement des femmes dans leurs transitions de vie",
+      "Johanna Richard — Guide de transition pour les femmes en métamorphose.",
     type: "website",
   },
 };
